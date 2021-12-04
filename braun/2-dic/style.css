@@ -1,0 +1,28 @@
+#main {
+  background-color: darkkhaki;
+  border: 1px solid black;
+  width: 300px;
+  height: 630px;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+
+#calcul {
+  border: 1px solid black;
+  padding: 1px;
+  margin: 10px;
+  height: 400px;
+  background-color: cornsilk;
+}
+
+#last_opr {
+  background-color: cornsilk;
+  border: 1px solid black;
+  width: 50px;
+  height: 30px;
+  position: absolute;
+  top: 450px;
+  left: 350px;
+  color: brown;
+}

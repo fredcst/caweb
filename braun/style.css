@@ -1,0 +1,49 @@
+body{
+}
+
+h1 {
+    background-color: gold;
+    border: 3px solid #283618;
+    color: #283618;
+    text-align: center;
+    padding-top: 0%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+h2{
+     color: gold;
+     text-decoration: underline;
+}
+
+p,li{
+    margin: 3px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.cont2 {
+    padding: 0%;
+    margin: 0%;
+    height: 200px;
+    width: 230px;
+    text-align: center;
+    border: 3px outset gold;
+    background-color : #283618;
+    color: white;
+    margin: 5px;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #81b29a;
+    height: auto;
+    width: 500px;
+    padding: 5px;
+}

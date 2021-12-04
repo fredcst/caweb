@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="" />
+  <style></style>
+  <script src=""></script>
+  <body>
+    <script>
+      function bonjour() {
+        var nom = prompt("votre prenom ? : ");
+        var age = prompt("votre annee de naissance ? : ");
+        document.getElementById("texte").innerHTML =
+          "Bonjour " + nom + ". Vous avez : " + (2021 - age) + " ans ! ";
+      }
+    </script>
+
+    <h1 id="titre">BONJOUR !</h1>
+    <input type="button" onclick="bonjour()" value="test" />
+    <p id="texte"></p>
+  </body>
+</html>
