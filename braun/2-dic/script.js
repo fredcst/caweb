@@ -7,51 +7,51 @@ var dernier = 0;
 getId("calcul").innerHTML = dernier;
 
 function plus(id) {
-  var val = getId("nombre").value;
+  var val = getId(id).value;
   last_opr();
   var dernier1 = dernier;
   dernier = dernier + parseInt(val);
   var p = "<p>" + dernier1 + "+" + val + "=" + dernier + "</p>";
   getId("calcul").innerHTML += p;
-  getId("nombre").value = "";
-  getId("nombre").focus();
+  getId(id).value = "";
+  getId(id).focus();
 }
 
 function division(id) {
-  var val = getId("nombre").value;
+  var val = getId(id).value;
   last_opr();
   if (val != 0) {
     var dernier1 = dernier;
     dernier = (dernier / parseInt(val)).toFixed(2);
     var p = "<p>" + dernier1 + "÷" + val + "=" + dernier + "</p>";
     getId("calcul").innerHTML += p;
-    getId("nombre").value = "";
+    getId(id).value = "";
   } else {
     alert("Division par 0!!!!! Pas permis !!!!");
   }
-  getId("nombre").focus();
+  getId(id).focus();
 }
 
 function mult(id) {
-  var val = getId("nombre").value;
+  var val = getId(id).value;
   last_opr();
   var dernier1 = dernier;
   dernier = dernier * parseInt(val);
   var p = "<p>" + dernier1 + "*" + val + "=" + dernier + "</p>";
   getId("calcul").innerHTML += p;
-  getId("nombre").value = "";
-  getId("nombre").focus();
+  getId(id).value = "";
+  getId(id).focus();
 }
 
 function moins(id) {
-  var val = getId("nombre").value;
+  var val = getId(id).value;
   last_opr();
   var dernier1 = dernier;
   dernier = dernier - parseInt(val);
   var p = "<p>" + dernier1 + "-" + val + "=" + dernier + "</p>";
   getId("calcul").innerHTML += p;
-  getId("nombre").value = "";
-  getId("nombre").focus();
+  getId(id).value = "";
+  getId(id).focus();
 }
 
 function last_opr() {
